@@ -1018,3 +1018,13 @@
      height: 220px;
      border-radius: 10%;
    }
+   header {
+    display: flex;
+    align-items: baseline;
+    
+    /* Remove the next line if you want the span to appear next to the h1 */
+    justify-content: space-between;
+    
+    /* border-bottom: 1px solid #000; */
+    /* padding: 10px 30px; */
+  }
