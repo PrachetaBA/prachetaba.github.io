@@ -37,6 +37,33 @@
 			body {
 			  overflow-x: hidden;
 			}
+
+			/* Social icon styles */
+			.social-icons {
+			  display: inline-flex;
+			  gap: 12px;
+			  align-items: center;
+			}
+			.social-icons a {
+			  display: inline-flex;
+			  align-items: center;
+			}
+			.social-icons img {
+			  width: 28px;
+			  height: 28px;
+			  opacity: 0.9;
+			  transition: transform 120ms ease, opacity 150ms ease;
+			}
+			.social-icons a:hover img,
+			.social-icons a:focus img {
+			  opacity: 1;
+			  transform: translateY(-1px);
+			}
+			.social-icons a:focus-visible {
+			  outline: 2px solid #0969da;
+			  outline-offset: 3px;
+			  border-radius: 6px;
+			}
 		</style>
 	</head>
 	<body class="markdown-body">
@@ -58,14 +85,17 @@
 
 					<p>pboddavarama [at] cs [dot] umass [dot] edu</p>
 
-					<p>
-						 <a href="https://www.linkedin.com/in/pracheta-amarnath/">LinkedIn</a>
-						 <br/>
-						 <a href="https://github.com/PrachetaBA">Github</a>
-						 <br/>
-						 <a href="PrachetaAmaranath_Resume.pdf">CV</a>
-						 </p>
-					</p>
+					<div class="social-icons">
+						<a href="https://www.linkedin.com/in/pracheta-amarnath/" aria-label="LinkedIn profile" title="LinkedIn">
+							<img src="images/linkedin.svg" alt="" />
+						</a>
+						<a href="https://github.com/PrachetaBA" aria-label="GitHub profile" title="GitHub">
+							<img src="images/github.svg" alt="" />
+						</a>
+						<a href="PrachetaAmaranath_Resume.pdf" aria-label="CV / Resume (PDF)" title="CV">
+							<img src="images/cv.svg" alt="" />
+						</a>
+					</div>
 				</div>
 			</div>
 
