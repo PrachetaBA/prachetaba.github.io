@@ -64,12 +64,29 @@
 			  outline-offset: 3px;
 			  border-radius: 6px;
 			}
+
+			details {
+			  margin-bottom: 1rem;
+			  padding: 0.4rem 0.8rem 0.8rem;
+			  border: 1px solid #ddd;
+			  border-radius: 8px;
+			  background: #fafafa;
+			}
+			summary {
+			  cursor: pointer;
+			  font-size: 1.1rem;
+			  font-weight: 600;
+			  margin-bottom: 0.3rem;
+			}
+			.details-content {
+			  margin-left: 0.5rem;
+			}
 		</style>
 	</head>
 	<body class="markdown-body">
 		<header>
 			<h1>Pracheta Amaranath</h1>
-			<span><a href="#about">About</a> &nbsp; <a href="#research">Research</a> &nbsp; <a href="#publications">Publications</a> &nbsp; <a href="#news">News</a> &nbsp;</span>
+			<span><a href="#about">About</a> &nbsp; <a href="#research">Research</a> &nbsp; <a href="#publications">Publications</a> &nbsp; <a href="#news">My Research Activities</a> &nbsp;</span>
 		</header>
 
 			<!-- <h2>Home &nbsp; &nbsp; <a href="./pubs/index.html">Publications</a></h2> -->
@@ -80,7 +97,7 @@
 				</div>
 				<div class="column-picture right">
 					<p>Ph.D. Candidate<br/>
-					Manning College of Information and Computer Sciences<br/>
+					<a href="https://www.cics.umass.edu/" target="_blank" rel="noopener">Manning College of Information and Computer Sciences</a><br/>
           Amherst, Massachusetts, US</p>
 
 					<p>pboddavarama [at] cs [dot] umass [dot] edu</p>
@@ -99,8 +116,30 @@
 				</div>
 			</div>
 
-      <h2 id="about">About Me</h2>
-      <p> <span style="color: red;"><em>(I'm on the job-market for industry post-docs and full-time research scientist positions! Please contact me if you think I would be a good fit for your team.)</em></span> I'm a sixth-year Ph.D. student in Computer Science at the University of Massachusetts-Amherst. My research lies in the intersection of simulation and causal inference, in that I work on problems that adopt techniques from simulation for causal inference and causal inference for simulation. I construct interpretable, causal metamodels of discrete-event simulation systems and use simulation-based inference techniques to improve the evaluation of causal inference algorithms. I'm fortunate to be advised by <a href="https://people.cs.umass.edu/~phaas/">Peter Haas</a> and <a href="https://groups.cs.umass.edu/jensen/">David Jensen</a>. 
+      <section id="key-accomplishments">
+        <h2>Key Accomplishments</h2>
+        <ul>
+          <li>Paper Winter Sim Best paper award</li>
+          <li>Paper Y Best paper Award</li>
+          <li>Googled X Intern on Bio Blah</li>
+          <li>Microsoft Visiting Gulti on Blah</li>
+          <li>Class Topper on EE / B</li>
+        </ul>
+      </section>
+
+      <section id="core-skills">
+        <h2>Core Skills</h2>
+        <ul>
+          <li>Causal Inference</li>
+          <li>Machine Learning</li>
+          <li>LLM</li>
+        </ul>
+        <p><em>Note: I am currently on the job market for industry post-doc and full-time research scientist positions. Please contact me if you think I would be a good fit for your team.</em></p>
+      </section>
+
+      <details id="about">
+        <summary><strong>About Me</strong></summary>
+      <p> I'm a sixth-year Ph.D. student in Computer Science at the University of Massachusetts-Amherst. My research lies in the intersection of simulation and causal inference, in that I work on problems that adopt techniques from simulation for causal inference and causal inference for simulation. I construct interpretable, causal metamodels of discrete-event simulation systems and use simulation-based inference techniques to improve the evaluation of causal inference algorithms. I'm fortunate to be advised by <a href="https://people.cs.umass.edu/~phaas/">Peter Haas</a> and <a href="https://groups.cs.umass.edu/jensen/">David Jensen</a>. 
 	  </p>
 	  
 	 <p>I spent seven months (June 2023-Jan 2024) at <a href="https://x.company/">X, the moonshot factory</a> as an AI resident working on a project on plant biology. Previously, I spent a summer (Summer 2020) at <a href="https://www.ebsco.com/about">EBSCO</a> as a semantic and modeling intern working on information retrieval and extraction of metadata from clinical text for classification. I was also a Data Science for Common Good Fellow with the Center for Data Science in Summer 2019, where I worked on research involving disease modeling and risk assessment for communities in Massachusetts.
@@ -108,13 +147,17 @@
 
       <p>In a previous life, I worked at Cisco Systems (India) as a systems engineer. I was responsible for solution design and testing for routing, switching, wireless, and data center architectures. I also contributed to developing network programmability solutions for various technology. I have an undergraduate degree in electronics and telecommunication engineering.  
       </p>
+      </details>
 
-      <h2 id="research">Research</h2>
+      <details id="research">
+        <summary><strong>Research</strong></summary>
       <p> Broadly, I aim to build explainable simulation metamodels using causal inference. I also work on improving evaluation of causal algorithms by developing new types of data that result in a more comprehensive and fair evaluation of estimators. 
       </p>
+      </details>
 
-      <h2 id="publications">Publications</h2>
-			<ul>
+      <details id="publications">
+        <summary><strong>Publications</strong></summary>
+		<ul>
 		<li>
 			<strong>Pracheta Amaranath</strong>, Vinitra Muralikrishnan, Amit Sharma, and David Jensen. <a href="https://arxiv.org/pdf/2509.02892"><em>Improving Generative Methods for Causal Evaluation via Simulation-Based Inference.</em></a> (In progress)
 		</li>
@@ -134,11 +177,13 @@
 			<strong>Pracheta Amaranath</strong>, Ninad Khargonkar, Prasanna Srinivasan, Roshan Thaikkat, Hari Balasubramanian, Peter J. Haas. <a href="https://www.abstractsonline.com/pp8/#!/9022/presentation/4725"><em>Estimating the Prevalence of Multiple Chronic Diseases via Maximum Entropy.</em></a> INFORMS Annual Meeting 2020. <em>(Journal submission in progress) </em>
 		</li>
 		<li>
-			<strong>Pracheta Amaranath</strong>, Purva Pruthi, Amanda Gentzel, David D. Jensen. <em>Characterizing and Applying Methods for Constructing Observational Data to Evaluate Treatment Effect Estimators.</em> (In progress) 
+			<strong>Pracheta Amaranath</strong>, Purva Pruthi, Amanda Gentzel, David D. Jensen. <em>Characterizing and Applying Methods for Constructing Observational Data to Evaluate Treatment Effect Estimators.</em></a> (In progress) 
 		</li>
       </ul>
+      </details>
 
-		<h2 id="news">News</h2>
+		<details id="news">
+			<summary><strong>My Research Activities</strong></summary>
 			<ul>
 				<li>
 					(September 2025) I have successfully defended my thesis proposal titled <em>The Interface of Simulation and Causal Modeling</em>! 
@@ -165,6 +210,21 @@
 					(November 2020) My work on chronic disease modeling was recently presented at the 2020 <a href = "https://www.abstractsonline.com/pp8/#!/9022/presentation/4725">INFORMS</a> Annual Meeting. 
 				</li>
 			</ul>
-
-	</body>
+		</details>
+		<script>
+			const navLinks = document.querySelectorAll('header a[href^="#"]');
+			navLinks.forEach(link => {
+				link.addEventListener('click', event => {
+					const targetId = link.getAttribute('href').slice(1);
+					const target = document.getElementById(targetId);
+					if (target && target.tagName.toLowerCase() === 'details') {
+						event.preventDefault();
+						target.open = true;
+						target.scrollIntoView({ behavior: 'smooth', block: 'center' });
+						history.replaceState(null, '', '#' + targetId);
+					}
+				});
+			});
+		</script>
+		</body>
 </html>
