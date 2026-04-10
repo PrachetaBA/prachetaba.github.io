@@ -64,6 +64,121 @@
 			  outline-offset: 3px;
 			  border-radius: 6px;
 			}
+
+			details {
+			  margin-bottom: 1rem;
+			  padding: 0.4rem 0.8rem 0.8rem;
+			  border: 1px solid #ddd;
+			  border-radius: 8px;
+			  background: #fafafa;
+			}
+			summary {
+			  cursor: pointer;
+			  font-size: 1.1rem;
+			  font-weight: 600;
+			  margin-bottom: 0.3rem;
+			}
+			.details-content {
+			  margin-left: 0.5rem;
+			}
+
+			.job-market-note {
+			  color: #8b0000;
+			}
+
+			.publications-table-wrap {
+			  margin-top: 0.7rem;
+			  overflow-x: auto;
+			}
+			.publications-compact {
+			  width: 100%;
+			  border-collapse: collapse;
+			  font-size: 0.95rem;
+			  line-height: 1.3;
+			}
+			.publications-compact th,
+			.publications-compact td {
+			  border-bottom: 1px solid #e5e5e5;
+			  padding: 0.35rem 0.4rem;
+			  vertical-align: top;
+			  text-align: left;
+			}
+			.publications-compact th {
+			  font-size: 0.77rem;
+			  letter-spacing: 0.03em;
+			  text-transform: uppercase;
+			  color: #666;
+			}
+			.publications-compact .pub-year {
+			  white-space: nowrap;
+			  width: 66px;
+			  font-weight: 600;
+			  color: #444;
+			}
+			.publications-compact .pub-venue {
+			  white-space: nowrap;
+			  width: 130px;
+			  color: #444;
+			}
+			.publications-compact .pub-title {
+			  margin: 0;
+			  font-weight: 600;
+			}
+			.publications-compact summary.pub-title {
+			  cursor: pointer;
+			  color: #0969da;
+			}
+			.publications-compact summary.pub-title em {
+			  font-style: italic;
+			}
+			.publications-compact .pub-authors {
+			  margin: 0.1rem 0 0;
+			  color: #333;
+			  font-size: 0.92rem;
+			}
+			.publications-compact .pub-links a {
+			  margin-right: 0.5rem;
+			}
+			.publications-compact .pub-abstract {
+			  margin: 0;
+			  padding: 0;
+			  border: 0;
+			  background: transparent;
+			}
+			.publications-compact .pub-abstract summary {
+			  margin: 0;
+			  display: inline-block;
+			}
+			.publications-compact .pub-abstract p {
+			  margin: 0.25rem 0 0;
+			  font-size: 0.9rem;
+			  color: #444;
+			}
+
+			@media (max-width: 767px) {
+			  .publications-compact {
+			    font-size: 0.9rem;
+			  }
+			  .publications-compact th,
+			  .publications-compact td {
+			    padding: 0.32rem 0.28rem;
+			  }
+			  .publications-compact .pub-year {
+			    width: 58px;
+			  }
+			  .publications-compact .pub-venue {
+			    width: 96px;
+			  }
+			  .publications-compact .pub-authors {
+			    font-size: 0.88rem;
+			  }
+			  .publications-compact summary.pub-title {
+			    font-size: 0.95rem;
+			  }
+			  .publications-compact .pub-abstract p {
+			    font-size: 0.86rem;
+			  }
+			}
 		</style>
 	</head>
 	<body class="markdown-body">
@@ -80,10 +195,10 @@
 				</div>
 				<div class="column-picture right">
 					<p>Ph.D. Candidate<br/>
-					Manning College of Information and Computer Sciences<br/>
-          Amherst, Massachusetts, US</p>
+					<a href="https://www.cics.umass.edu/" target="_blank" rel="noopener">Manning College of Information and Computer Sciences</a><br/>
+          Amherst, Massachusetts, USA</p>
 
-					<p>pboddavarama [at] cs [dot] umass [dot] edu</p>
+					<p>Email: <a href="mailto:pboddavarama@umass.edu">pboddavarama@umass.edu</a></p>
 
 					<div class="social-icons">
 						<a href="https://www.linkedin.com/in/pracheta-amarnath/" aria-label="LinkedIn profile" title="LinkedIn">
@@ -99,47 +214,172 @@
 				</div>
 			</div>
 
-      <h2 id="about">About Me</h2>
-      <p> <span style="color: red;"><em>(I'm on the job-market for industry post-docs and full-time research scientist positions! Please contact me if you think I would be a good fit for your team.)</em></span> I'm a sixth-year Ph.D. student in Computer Science at the University of Massachusetts-Amherst. My research lies in the intersection of simulation and causal inference, in that I work on problems that adopt techniques from simulation for causal inference and causal inference for simulation. I construct interpretable, causal metamodels of discrete-event simulation systems and use simulation-based inference techniques to improve the evaluation of causal inference algorithms. I'm fortunate to be advised by <a href="https://people.cs.umass.edu/~phaas/">Peter Haas</a> and <a href="https://groups.cs.umass.edu/jensen/">David Jensen</a>. 
-	  </p>
-	  
-	 <p>I spent seven months (June 2023-Jan 2024) at <a href="https://x.company/">X, the moonshot factory</a> as an AI resident working on a project on plant biology. Previously, I spent a summer (Summer 2020) at <a href="https://www.ebsco.com/about">EBSCO</a> as a semantic and modeling intern working on information retrieval and extraction of metadata from clinical text for classification. I was also a Data Science for Common Good Fellow with the Center for Data Science in Summer 2019, where I worked on research involving disease modeling and risk assessment for communities in Massachusetts.
-      </p>
+	  <section id="short bio">
+		<h2>Short Bio</h2>
+		I'm a Ph.D Candidate at the University of Massachusetts Amherst, working in the intersection of causal inference and simulation modeling. My work spans two key areas: using causal modeling to enable quick and accurate decision-making from complex simulation models, and using techniques in simulation-based inference and generative modeling to improve causal inference algorithms. I'm fortunate to be advised by <a href="https://people.cs.umass.edu/~phaas/">Peter Haas</a> and <a href="https://groups.cs.umass.edu/jensen/">David Jensen</a>. I have a Masters from the University of Massachusetts Amherst, and a undergraduate degree in electronics and telecommunications engineering. 
+	  </section>
 
-      <p>In a previous life, I worked at Cisco Systems (India) as a systems engineer. I was responsible for solution design and testing for routing, switching, wireless, and data center architectures. I also contributed to developing network programmability solutions for various technology. I have an undergraduate degree in electronics and telecommunication engineering.  
-      </p>
+      <section id="core-skills">
+        <h2>Core Skills</h2>
+        <ul>
+          <li>Causal Inference: Bayesian inference, graphical models, probabilistic programming, time-series modeling</li>
+          <li>Machine Learning: Generative neural networks, LLMs, statistical modeling</li>
+          <li>Simulation Modeling: Discrete-event simulations, simulation metamodeling</li>
+        </ul>
+		<p class="job-market-note"><em>Note: I am currently on the job market for industry post-doc and full-time research scientist positions. Please contact me if you think I would be a good fit for your team.</em></p>
+      </section>
 
-      <h2 id="research">Research</h2>
-      <p> Broadly, I aim to build explainable simulation metamodels using causal inference. I also work on improving evaluation of causal algorithms by developing new types of data that result in a more comprehensive and fair evaluation of estimators. 
-      </p>
+	<section id="key-accomplishments">
+        <h2>Honors & Distinctions</h2>
+        <ul>
+          <li>"Causal Dynamic Bayesian Networks for Simulation Metamodeling" nominated for the Best Paper Award, Winter Simulation Conference, 2023</li>
+          <li>"Improving Generative Methods for Causal Evaluation via Simulation-Based Inference" selected for Oral Spotlight presentation at ACIC 2026</li>
+          <li>Interned at X, the moonshot factory as an AI Resident from Jun 2023-Jan 2024.</li> 
+		  <li>Visiting Scholar at Microsoft Research, India from Nov 2024-Jan 2025.</li>
+          <li>Awarded a Dissertation Proposal Writing Fellowship from the Manning College of Information and Computer Sciences for Fall 2024</li>
+        </ul>
+      </section>
 
-      <h2 id="publications">Publications</h2>
+	  <section id="publications">
+        <h2>Publications</h2>
+		<div class="publications-table-wrap">
+			<table class="publications-compact">
+				<thead>
+					<tr>
+						<th>Year</th>
+						<th>Venue</th>
+						<th>Publication</th>
+						<th>Links</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="pub-year">2026</td>
+						<td class="pub-venue">CLeaR</td>
+						<td>
+							<details class="pub-abstract"><summary class="pub-title"><em>Improving Generative Methods for Causal Evaluation via Simulation-Based Inference.</em></summary><p>Generating synthetic datasets that accurately reflect real-world observational data is critical for evaluating causal estimators, but it remains a challenging task. Existing generative methods offer a solution by producing synthetic datasets anchored in the observed data (source data) while allowing variation in key parameters such as the treatment effect and amount of confounding bias. However, it is often unclear which generative methods to use and which values of parameters to choose when generating synthetic datasets. Moreover, existing methods typically require users to provide fixed point estimates of such parameters. This denies users the ability to express uncertainty over both generative methods and parameter values and removes the potential for posterior inference, potentially leading to unreliable estimator comparisons. We introduce simulation-based inference for causal evaluation (SBICE), a framework that treats the generative method and its corresponding generative parameters as uncertain and infers their posterior distribution given a source dataset. Leveraging techniques in simulation-based inference, SBICE identifies suitable generative methods and infers distributions over its parameter configurations to produce synthetic datasets closely aligned with the source data distribution. Empirical results demonstrate that SBICE improves the reliability of estimator evaluations by generating realistic datasets whose causal estimates closely match the estimates of the source data, making it a robust and uncertainty-aware approach to selecting causal estimators.</p></details>
+							<p class="pub-authors"><strong>Pracheta Amaranath</strong>, Vinitra Muralikrishnan, Amit Sharma, and David Jensen.</p>
+						</td>
+						<td class="pub-links"><a href="https://arxiv.org/abs/2509.02892">Link</a><a href="https://openreview.net/pdf?id=CbDA8uPFYF">PDF</a></td>
+					</tr>
+					<tr>
+						<td class="pub-year">(Ongoing)</td>
+						<td class="pub-venue">(Submitted to WSC)</td>
+						<td>
+							<details class="pub-abstract"><summary class="pub-title"><em>Extending Causal Metamodeling to a Non-Markovian Queue.</em></summary><p>Metamodels for discrete-event simulations approximate the behavior of simulation models without running expensive simulations. Prior work introduced modular dynamic Bayesian networks (MDBNs)---a class of metamodels that can estimate a range of probabilistic and causal queries (PCQs) using a single, trained model---but the method was limited to Markovian systems. In this paper, we initiate an extension of MDBNs to non-Markovian queues by approximating non-exponential distributions using phase-type distributions. This approach raises novel challenges, including balancing metamodeling accuracy and tractability when choosing the number of phases, efficiently learning metamodel parameters, and choosing the sampling interval that is used to approximate a continuous-time simulation by a discrete-time MDBN. We provide preliminary solutions to these challenges, yielding the first causal metamodeling technique for non-Markovian systems. Experiments on a G/M/1 queue demonstrate that the MDBN can produce accurate answers to PCQs with orders-of-magnitude speedup of inference times relative to direct simulation.</p></details>
+							<p class="pub-authors"><strong>Pracheta Amaranath</strong>, Anant Bhide, David Jensen, and Peter J. Haas.</p>
+						</td>
+						<td class="pub-links"></td>
+					</tr>
+					<tr>
+						<td class="pub-year">(Ongoing)</td>
+						<td class="pub-venue">Manuscript</td>
+						<td>
+							<details class="pub-abstract"><summary class="pub-title"><em>Scaling Modular Dynamic Bayesian Networks for Queuing Simulations.</em></summary><p>In preparation.</p></details>
+							<p class="pub-authors"><strong>Pracheta Amaranath</strong>, Anant Bhide, Sam Witty, David Jensen, and Peter J. Haas.</p>
+						</td>
+						<td class="pub-links">-</td>
+					</tr>
+					<tr>
+						<td class="pub-year">2023</td>
+						<td class="pub-venue">WSC</td>
+						<td>
+							<details class="pub-abstract"><summary class="pub-title"><em>Causal Dynamic Bayesian Networks for Simulation Metamodeling.</em></summary><p>A traditional metamodel for a discrete-event simulation approximates a real-valued performance measure as a function of the input-parameter values. We introduce a novel class of metamodels based on modular dynamic Bayesian networks (MDBNs), a subclass of probabilistic graphical models which can be used to efficiently answer a rich class of probabilistic and causal queries (PCQs). Such queries represent the joint probability distribution of the system state at multiple time points, given observations of, and interventions on, other state variables and input parameters. This paper is a first demonstration of how the extensive theory and technology of causal graphical models can be used to enhance simulation metamodeling. We demonstrate this potential by showing how a single MDBN for an M/M/1 queue can be learned from simulation data and then be used to quickly and accurately answer a variety of PCQs, most of which are out-of-scope for existing metamodels.</p></details>
+							<p class="pub-authors"><strong>Pracheta Amaranath</strong>, Sam Witty, Peter J. Haas, and David Jensen.</p>
+						</td>
+						<td class="pub-links"><a href="https://ieeexplore.ieee.org/document/10407746">Link</a><a href="https://3449182.fs1.hubspotusercontent-na1.net/hubfs/3449182/2023%20WSC%20Stamped%20Papers/23WSC_Paper_062.pdf">PDF</a></td>
+					</tr>
+					<tr>
+						<td class="pub-year">2023</td>
+						<td class="pub-venue">Biometrics</td>
+						<td>
+							<details class="pub-abstract"><summary class="pub-title"><em>Adaptive Selection of the Optimal Strategy to Improve Precision and Power in Randomized Trials.</em></summary><p>Benkeser et al. demonstrate how adjustment for baseline covariates in randomized trials can meaningfully improve precision for a variety of outcome types. Their findings build on a long history, starting in 1932 with R.A. Fisher and including more recent endorsements by the U.S. Food and Drug Administration and the European Medicines Agency. Here, we address an important practical consideration: how to select the adjustment approach—which variables and in which form—to maximize precision, while maintaining Type-I error control. Balzer et al. previously proposed Adaptive Pre-specification within TMLE to flexibly and automatically select, from a prespecified set, the approach that maximizes empirical efficiency in small trials (N < 40). To avoid overfitting with few randomized units, selection was previously limited to working generalized linear models, adjusting for a single covariate. Now, we tailor Adaptive Pre-specification to trials with many randomized units. Using V-fold cross-validation and the estimated influence curve-squared as the loss function, we select from an expanded set of candidates, including modern machine learning methods adjusting for multiple covariates. As assessed in simulations exploring a variety of data-generating processes, our approach maintains Type-I error control (under the null) and offers substantial gains in precision—equivalent to 20%-43% reductions in sample size for the same statistical power. When applied to real data from ACTG Study 175, we also see meaningful efficiency improvements overall and within subgroups.</p></details>
+							<p class="pub-authors">Laura B. Balzer, Erica Cai, Lucas Godoy Garraza, and <strong>Pracheta Amaranath</strong>.</p>
+						</td>
+						<td class="pub-links"><a href="https://academic.oup.com/biometrics/article/80/1/ujad034/7623142?guestAccessKey=">Link</a><a href="https://watermark02.silverchair.com/ujad034.pdf?token=AQECAHi208BE49Ooan9kkhW_Ercy7Dm3ZL_9Cf3qfKAc485ysgAAA48wggOLBgkqhkiG9w0BBwagggN8MIIDeAIBADCCA3EGCSqGSIb3DQEHATAeBglghkgBZQMEAS4wEQQMjVZfy9Tk88HG5pOUAgEQgIIDQjRLiUDv63pCrEkXkXjceCMoj9UDB5tzUynF_nC_5XpfG3FIvbiCe70xsbRQcrFva68FDJx4qwuR-ek6wK0Y71-C97DDNUfgFBUyQPTs2CQ2nf3FRGiV3G-c-XpSrZAq4fLrEw-pp_ckhFkjlk1uTSicY0Wxr5xTIkyZFIGSkVDf_czfQC4xnT1EWpnUa9kkOIxNTTzGFaUAW0wvPXkbr-m9sol49rTtRcj6Su2ThLhg5G9y3oBfrhQyni2ebf3Wp6pdDgXMSfzrU_2Tx42O4TBHOc52v_4FQSBnN3a71DWuoU3q8KWn1auaE13gP1t8ywC_5RgKJWcQ3a3tUH3U__D_HilmEo8BP2yyVlxydLsjEcR3eQUtFwGyRn4GbP_5yeXuxuhSp24WmgPyyUPlQYOfsNV6KZKPNc77ZA1R-PHp0CzkuVVh1z7zVlwGHK7SIRy2GLr3yG4yukprGshe_OzjT6vs0s5exmVkQtPwNPnQKnRdDG91LyKUe9CC-5zrbL-i2VodsDZlVlxTz-EOxvfZaOFjUYZ6zp-WG3Qj__Xq975MruEEmkoPGAzzdbEY5lb7ZPTDQComyZgCOCcoivxsMYEZwM7Hh3Av99tVmn6obWBE0RJojvlZDneZgJ0SJchEZEnP6RMzLynmbjeeGrilw2EprccwWXF94JKnka3K08xILHlbjz9XCw03tE7v2W-AMy3YqUJc0SlpyGEn1sbyBVwoyPVKpcjca8baS0_9ru9FS8XvEGe31dqSKbEnKAsPsezAXAn4b6PbuRFWtEnKR434jYjDVrYzM7xtNNJ2znuMAV-SDQKBg9kFIh_mKPi76NaWiidqzMHoKOwOJDw9e0AOCf1ejPWNj_A5Cgh-qtHkvo1ukMMvA54dcg3e_dngftuZzho5rrzQKDLr0cIS_Ut51LefObmqyv3Tl5lfyJKYuHWiuGk7MQCsz1llFxahWJpqgDysl5Z_Qw2n6KWv-eEcR3N6-RejY-aHzZLTTQHtHm5uRCRooMxp4OPAVYvhVgu0T5tNQbEIG1evRFYIt1-eX-cJh3k94PJa03Xwdg5441v3VJ0ADqCY88mRnrGidMvmbUQS9pnrW48kQ0tkXA">PDF</a></td>
+					</tr>
+					<tr>
+						<td class="pub-year">2022</td>
+						<td class="pub-venue">arXiv</td>
+						<td>
+							<details class="pub-abstract"><summary class="pub-title"><em>Measuring Interventional Robustness in Reinforcement Learning.</em></summary><p>Recent work in reinforcement learning has focused on several characteristics of learned policies that go beyond maximizing reward. These properties include fairness, explainability, generalization, and robustness. In this paper, we define interventional robustness (IR), a measure of how much variability is introduced into learned policies by incidental aspects of the training procedure, such as the order of training data or the particular exploratory actions taken by agents. A training procedure has high IR when the agents it produces take very similar actions under intervention, despite variation in these incidental aspects of the training procedure. We develop an intuitive, quantitative measure of IR and calculate it for eight algorithms in three Atari environments across dozens of interventions and states. From these experiments, we find that IR varies with the amount of training and type of algorithm and that high performance does not imply high IR, as one might expect.</p></details>
+							<p class="pub-authors">Katherine Avery, Jack Kenney, <strong>Pracheta Amaranath</strong>, Erica Cai, and David Jensen.</p>
+						</td>
+						<td class="pub-links"><a href="https://arxiv.org/abs/2209.09058">Link</a><a href="https://arxiv.org/pdf/2209.09058">PDF</a></td>
+					</tr>
+					<tr>
+						<td class="pub-year">2022</td>
+						<td class="pub-venue">Manuscript</td>
+						<td>
+							<details class="pub-abstract"><summary class="pub-title"><em>Characterizing and Applying Methods for Constructing Observational Data to Evaluate Treatment Effect Estimators.</em></summary><p>In preparation. This work studies construction of observational datasets for more faithful and systematic evaluation of treatment effect estimators.</p></details>
+							<p class="pub-authors"><strong>Pracheta Amaranath</strong>, Purva Pruthi, Amanda Gentzel, and David D. Jensen.</p>
+						</td>
+						<td class="pub-links">-</td>
+					</tr>
+					<tr>
+						<td class="pub-year">2020</td>
+						<td class="pub-venue">INFORMS</td>
+						<td>
+							<details class="pub-abstract"><summary class="pub-title"><em>Estimating the Prevalence of Multiple Chronic Diseases via Maximum Entropy.</em></summary><p>The prevalence of multiple chronic disease conditions (MCC) among the U.S. population is steadily increasing and accounts for an outsized share of healthcare expenditures. A predictive model for the probabilities of co-occurring conditions is crucial for planning and implementing complex care interventions, estimating aggregate healthcare costs, and studying physiological associations among conditions. Although the number of MCC patients is large, the chronic-condition combinations among these patients exhibit significant heterogeneity, leading to data-sparsity issues that thwart the simple maximum-likelihood estimation approaches used today.   We combine maximum-entropy, data-mining, and machine learning techniques to create an algorithm for estimating MCC prevalence in data-sparse settings; it estimates the prevalence of unseen combinations in a principled manner that is mathematically consistent and reflects the MCC associations that have enough support in the data to be trustworthy. The viability of our approach is demonstrated via experiments on synthetic data and a detailed case study using  Medical Expenditure Panel Survey (MEPS) data.</p></details>
+							<p class="pub-authors"><strong>Pracheta Amaranath</strong>, Ninad Khargonkar, Prasanna Srinivasan, Roshan Thaikkat, Hari Balasubramanian, and Peter J. Haas.</p>
+						</td>
+						<td class="pub-links"><a href="https://www.abstractsonline.com/pp8/#!/9022/presentation/4725">Link</a></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+      </section>
+
+
+      <details id="about">
+        <summary><strong>Experience</strong></summary>
+      <ul>
+		<li>
+			<em>(Nov 2024-Jan 2025) Visiting Scholar at Microsoft Research, India: </em> I worked on developing simulation-based inference methods to aid causal evaluation and improve generative neural networks! 
+		</li>
+		<li>
+			<em>(Jun 2023-Jan 2024) AI Resident at at <a href="https://x.company/">X, the moonshot factory</a></em> I worked on designing and developing simulation tools to evaluate the machine learning pipelines for sequence data.
+		</li>
+		<li>
+			Previously, I spent a summer (Summer 2020) at <a href="https://www.ebsco.com/about">EBSCO</a> as a semantic and modeling intern working on information retrieval and extraction of metadata from clinical text for classification. I was also a Data Science for Common Good Fellow with the Center for Data Science in Summer 2019, where I worked on research involving disease modeling and risk assessment for communities in Massachusetts.
+		</li>
+		<li>
+			In a previous life, I worked at Cisco Systems (India) as a systems engineer. I was responsible for solution design and testing for routing, switching, wireless, and data center architectures. I also contributed to developing network programmability solutions for various technology. I have an undergraduate degree in electronics and telecommunication engineering.  
+      </p>
+		</li>
+	  </ul>
+      </details>
+
+      <details id="research">
+        <summary><strong>Research Projects</strong></summary>
+		<ul>
+			<li>
+				I'm working with Adobe Research as a Ph.D. Mentor on developing evaluation frameworks to quantify cost-awareness and resource eﬃciency in LLM-based planning algorithms.
+			</li>
+			<li>
+				I was funded by the Center for Science for AI Governance to develop theoretical foundations and empirical analyses to understand when and why LLM-generated text can be reliably detected.
+			</li>
+			<li>
+				I was funded by Army Research Oﬃce—DEVCOM Analysis Center to design a causal, simulation model as a testbed for logistic networks and developed surrogate models enabling eﬃcient what-if analysis for complex operational systems. 
+			</li>
+			<li>
+				I'm also working with collaborators in the Dept. of Industrial Engineering to develop an algorithm to estimate the prevalence of multiple chronic conditions using maximum entropy, frequent itemset mining and machine learning! 
+			</li>
+		</ul>
+      </details>
+
+		<details id="news">
+			<summary><strong>News</strong></summary>
 			<ul>
-		<li>
-			<strong>Pracheta Amaranath</strong>, Vinitra Muralikrishnan, Amit Sharma, and David Jensen. <a href="https://arxiv.org/pdf/2509.02892"><em>Improving Generative Methods for Causal Evaluation via Simulation-Based Inference.</em></a> (In progress)
-		</li>
-		<li>
-			<strong>Pracheta Amaranath</strong>, Sam Witty, Peter J. Haas, and David Jensen. <em>Modular Dynamic Bayesian Networks for Markovian Queuing Simulations.</em> (In progress)
-		</li>
-		<li>
-			<strong>Pracheta Amaranath</strong>, Sam Witty, Peter J. Haas, and David Jensen. <a href="https://3449182.fs1.hubspotusercontent-na1.net/hubfs/3449182/2023%20WSC%20Stamped%20Papers/23WSC_Paper_062.pdf"><em>Causal Dynamic Bayesian Networks for Simulation Metamodeling.</em></a> Proceedings of the Winter Simulation Conference 2023.
-		</li>
-		<li>
-			Laura B. Balzer, Erica Cai, Lucas Godoy Garraza and <strong>Pracheta Amaranath</strong>. <a href="https://arxiv.org/abs/2210.17453"><em>Adaptive Selection of the Optimal Strategy to Improve Precision and Power in Randomized Trials.</em></a> To appear in Biometrics. (2023)
-		</li>
-        <li>
-			Katherine Avery, Jack Kenney, <strong>Pracheta Amaranath</strong>, Erica Cai, and David Jensen. <a href="https://arxiv.org/abs/2209.09058"><em>Measuring Interventional Robustness in Reinforcement Learning.</em></a> arXiv preprint arXiv:2209.09058 (2022).
-        </li>
-		<li>
-			<strong>Pracheta Amaranath</strong>, Ninad Khargonkar, Prasanna Srinivasan, Roshan Thaikkat, Hari Balasubramanian, Peter J. Haas. <a href="https://www.abstractsonline.com/pp8/#!/9022/presentation/4725"><em>Estimating the Prevalence of Multiple Chronic Diseases via Maximum Entropy.</em></a> INFORMS Annual Meeting 2020. <em>(Journal submission in progress) </em>
-		</li>
-		<li>
-			<strong>Pracheta Amaranath</strong>, Purva Pruthi, Amanda Gentzel, David D. Jensen. <em>Characterizing and Applying Methods for Constructing Observational Data to Evaluate Treatment Effect Estimators.</em> (In progress) 
-		</li>
-      </ul>
-
-		<h2 id="news">News</h2>
-			<ul>
+				<li>
+					(May 2026) I'll be attending <a href="https://sci-info.org/2026-meeting-2/">ACIC 2026</a> to present my work on causal evaluation! 
+				</li>
+				<li>
+					(April 2026) I'll be a panelist at the Voices of Data Science 2026!
+				</li>
+				<li> 
+					(April 2026) I presented my work on <em>Improving Generative Methods for Causal Evaluation via Simulation-Based Inference</em> at <a href="https://www.cclear.cc/2026">CLeaR 2026!</a>
+				</li>
 				<li>
 					(September 2025) I have successfully defended my thesis proposal titled <em>The Interface of Simulation and Causal Modeling</em>! 
 				</li>
@@ -165,6 +405,21 @@
 					(November 2020) My work on chronic disease modeling was recently presented at the 2020 <a href = "https://www.abstractsonline.com/pp8/#!/9022/presentation/4725">INFORMS</a> Annual Meeting. 
 				</li>
 			</ul>
-
-	</body>
+		</details>
+		<script>
+			const navLinks = document.querySelectorAll('header a[href^="#"]');
+			navLinks.forEach(link => {
+				link.addEventListener('click', event => {
+					const targetId = link.getAttribute('href').slice(1);
+					const target = document.getElementById(targetId);
+					if (target && target.tagName.toLowerCase() === 'details') {
+						event.preventDefault();
+						target.open = true;
+						target.scrollIntoView({ behavior: 'smooth', block: 'center' });
+						history.replaceState(null, '', '#' + targetId);
+					}
+				});
+			});
+		</script>
+		</body>
 </html>
